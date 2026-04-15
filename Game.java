@@ -1,4 +1,19 @@
-/*public class Level{
+public class Game{
+  private Level levelOne;
+  private Level levelTwo;
+  private Level levelThree;
+public Game(){
+  
+}
+public boolean isBonus(){ 
+  return GameTest.getNextBonus();
+}
+public void play()
+  {
+    levelOne = GameTest.getNextLevel();
+    levelTwo = GameTest.getNextLevel();
+    levelThree = GameTest.getNextLevel();
+  }
 
   public int getScore(){
     int score =0;
@@ -29,4 +44,3 @@
     return max;
     }
 }
-*/
