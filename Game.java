@@ -1,4 +1,4 @@
-public class Level{
+/*public class Level{
 
   public int getScore(){
     int score =0;
@@ -29,3 +29,4 @@ public class Level{
     return max;
     }
 }
+*/

@@ -1,11 +1,20 @@
-public class AppointmentBook{
+public class AppointmentBook1{
+  private boolean isMinuteFree(int period, int minute){
+    if(period >= 1 && period <=8 && minute >=0 && minute <= 59){
+      return true;
+    }
+    return false;
+  }
+  private void reserveBlock(int period, int startMinute,int duration){
+
+  }
   public int findFreeBlock(int period, int duration){
     int blockLength = 0;
     for (int minute = 0; minute < 60; minute++){
       if (isMinuteFree(period, minute)){
       blockLength++;
       if (blockLength == duration){
-      return minute – blockLength + 1;
+      return minute - blockLength + 1;
       }
       }
      else
